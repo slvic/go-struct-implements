@@ -6,6 +6,9 @@ Powered by gopls (LSP) and Tree‑sitter. Renders a virtual line above each stru
 
   implements: io.Reader, fmt.Stringer, ...
 
+Example
+- ![Struct implements example](assets/screenshot.jpg)
+
 Requirements
 - Neovim 0.9+ (tested) with Tree‑sitter for Go
 - gopls installed and configured for your workspace
@@ -42,4 +45,3 @@ Usage
 Notes
 - Large workspaces may take time; results are best‑effort from gopls.
 - Only active for `filetype=go` buffers.
-

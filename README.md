@@ -13,10 +13,13 @@ Requirements
 Install (Lazy.nvim)
 - Zero-config (auto-setup):
 
+```lua
   { 'slvic/go-struct-implements' }
+```
 
 - Optional: disable auto-setup and configure yourself:
 
+```lua
   {
     'slvic/go-struct-implements',
     init = function()
@@ -26,12 +29,15 @@ Install (Lazy.nvim)
       require('go_struct_implements').setup()
     end,
   }
+```
 
 Usage
 - The plugin auto-refreshes on `BufEnter`, `BufWritePost`, and when gopls attaches.
 - Manually refresh the current buffer:
 
-  :StructImplementsRefresh
+```sh
+:StructImplementsRefresh
+```
 
 Notes
 - Large workspaces may take time; results are best‑effort from gopls.
